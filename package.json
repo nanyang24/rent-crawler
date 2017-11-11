@@ -1,0 +1,32 @@
+{
+  "name": "rent-crawler",
+  "version": "1.0.0",
+  "description": "A crawler crawling rental information, based Nodejs",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "cheerio": "^1.0.0-rc.2",
+    "mongoose": "^4.13.0"
+  },
+  "devDependencies": {},
+  "bin": {
+    "zufang": "./index.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "rent",
+    "crawler",
+    "crawl",
+    "nodejs"
+  ],
+  "author": "nanyang24",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanyang24/rent-crawler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nanyang24/rent-crawler/issues"
+  },
+  "homepage": "https://github.com/nanyang24/rent-crawler#readme"
+}
