@@ -13,15 +13,22 @@ A crawler crawling rental information, based Nodejs
 ```
 $ npm install rent-crawler
 ```
+> win全局要加`-g`
+
+## 下载并启动mongodb
+
+mongodb: [下载](https://www.mongodb.com/download-center)
+
+启动方法自行查阅
 
 ## 用法 Usage
 ```
-zufang [query]
+$ zufang [query]
 ```
 
 eg: 
 ```
-zufang 鼓楼区
+$ zufang 鼓楼区
 ```
 ## BTW
 
@@ -48,20 +55,20 @@ brew install mongodb
 ```
 ## 启动服务端
 ```
-mongod --config /usr/local/etc/mongod.conf
+$ mongod --config /usr/local/etc/mongod.conf
 ```
 
 ## 客户端使用
 使用MongoDB，首先需要连接到MongoDB service:
 ```
-mongo
+$ mongo
 ```
 ```
-use yourdbname
+> use yourdbname
 ```
 ### 更多命令
 ```
-db.dbname.find()
+> db.dbname.find()
 ```
 
 ## mongoose
@@ -72,7 +79,7 @@ db.dbname.find()
 我们可以用Schema对象定义文档的结构（类似表结构），可以定义字段和类型、唯一性、索引和验证。Model对象表示集合中的所有文档。Document对象作为集合中的单个文档的表示。mongoose还有Query和Aggregate对象，Query实现查询，Aggregate实现聚合。
 
 ```
-npm install mongoose --save
+$ npm install mongoose --save
 ```
 > 这个命令会安装mongoose并将其作为项目的依赖，而mongoose依赖的MongoDB driver以及regexp等等模块也会被自动安装。
 

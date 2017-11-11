@@ -1,6 +1,6 @@
 {
   "name": "rent-crawler",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A crawler crawling rental information, based Nodejs",
   "main": "index.js",
   "dependencies": {
