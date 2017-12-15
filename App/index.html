@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>租房爬虫</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_510041_is13n8enhzv0lik9.css">
+</head>
+<body>
+    <div class="body">
+        <div class="name">
+            <h2>Node.js 租房信息爬虫</h2>
+        </div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="请输入需要查询的地点">
+            <button class="search-btn">查询</button>
+        </div>
+
+        <ul class="reminder">
+            <li>输入关键词，点击“查询”从豆瓣福州租房小组第一页开始搜索</li>
+            <li>点击“加载更多”会继续查询下一页是否存在目标房源</li>
+            <li>点击“标题”即可进入查看帖子详情</li>
+            <li>如果还没想到关键词，可以直接点击查询随便逛逛~</li>
+            <li>让我们开始吧</li>
+        </ul>
+        <ul class="lists">
+            <!--<li class="item">-->
+            <!--<a href="https://www.douban.com/group/topic/106959572/" class="item-title"><h3>西湖区物华小区2房豪装</h3></a>-->
+            <!--<p class="details">西湖区，丰潭路西斗门路交叉口物华小区朝南 80㎡无中介费，包物业费欢迎联系看房18758235278</p>-->
+            <!--<div class="pic-wrapper">-->
+            <!--<ul style="width: 400px" class="pic-content">-->
+            <!--<li>-->
+            <!--<img class="pic"-->
+            <!--src="https://img3.doubanio.com/view/group_topic/llarge/public/p91241551.jpg"-->
+            <!--alt="">-->
+            <!--</li>-->
+            <!--<li><img class="pic"-->
+            <!--src="https://img3.doubanio.com/view/group_topic/llarge/public/p91241553.jpg"-->
+            <!--alt=""></li>-->
+            <!--<li><img class="pic"-->
+            <!--src="https://img1.doubanio.com/view/group_topic/llarge/public/p91241557.jpg"-->
+            <!--alt=""></li>-->
+            <!--<li><img class="pic"-->
+            <!--src="https://img3.doubanio.com/view/group_topic/llarge/public/p91241565.jpg"-->
+            <!--alt=""></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <div class="load-img">
+            <div class="icon-loading iconfont"></div>
+        </div>
+        <div class="info-wrapper">
+            <p class="info"></p>
+        </div>
+        <div class="load-more">
+            <a href="#" class="load-more-btn">加载更多</a>
+        </div>
+    </div>
+    <script src="./bscroll.min.js"></script>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="gotop.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

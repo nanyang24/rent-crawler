@@ -2,7 +2,7 @@
 // entrance
 
 require('./services/mongo');
-const Topic = require('./models/topic')
+const Topic = require('./models/topic');
 const crawler = require('./services/crawler');
 
 let index = 1;
