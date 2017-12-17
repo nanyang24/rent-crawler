@@ -52,6 +52,7 @@
                 console.log(data, pageIndex);
                 if (data.length === 0) {
                     $infoWrapper.fadeIn(200);
+                    $load.show();
                     $info.html('第' + pageIndex + '页 没有与 “' + target + '” 有关的房源信息');
                 } else {
                     $load.show();
