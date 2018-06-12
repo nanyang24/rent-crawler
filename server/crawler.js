@@ -6,7 +6,7 @@ const cheerio = require('cheerio')  // 解决拉取页面之后解析环境的�
 async function fetchSingleDoubanList(start) {
     let res = await axios({
         method: 'get',
-        url: `https://www.douban.com/group/255608/discussion?start=${start}`,
+        url: `https://www.douban.com/group/498004/discussion?start=${start}`,
         headers: {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3213.3 Safari/537.36'
         }
@@ -37,7 +37,7 @@ async function fetchSingleDoubanTopic(url, title) {
         details.push(topicBody.eq(i).text());
     }
 
-    const topicPics = $('.topic-figure > img')
+    const topicPics = $('.image-wrapper > img')
     let picture = [];
     for (let i = 0; i < topicPics.length; i++) {
         picture.push(topicPics.eq(i).attr('src'));
