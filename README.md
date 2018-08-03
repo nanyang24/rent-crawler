@@ -39,7 +39,7 @@ npm start
 
 ## BTW
 
-默认爬取的是豆瓣的福州租房小组列表。如需改动，请将 `crawler.js` 中的 `fetchSingleDoubanList` 的链接更改为其他城市的豆瓣租房小组。
+默认爬取的是豆瓣的【深圳南山区】租房小组列表。如需改动，请将 `crawler.js` 中的 `fetchSingleDoubanList` 的链接更改为其他城市地区的豆瓣租房小组。
 
 ## More 更多
 
